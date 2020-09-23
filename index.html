@@ -12,7 +12,6 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="backdrop-container">
     <header>
       <!-- главная навигация -->
       <div class="container">
@@ -57,7 +56,9 @@
         <section class="hero">
           <div class="container hero-section">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button data-modal-open class="button" type="button">Заказать услугу</button>
+            <button data-modal-open class="button" type="button">
+              Заказать услугу
+            </button>
           </div>
         </section>
         <!-- особенности компании -->
@@ -98,20 +99,8 @@
             </ul>
           </div>
         </section>
-        <div data-modal class="backdrop is-hidden" >
-          <div class="modal">
-            <!-- <button data-modal-close type="button"> -->
-              <svg  data-modal-close class="modal-close-button" >
-              <use href="./images/icons/symbol-defs.svg#icon-close-1"></use>
-            </svg>
-            
-          </div>
-          </div>
-        </div>
-        </div>
-        
         <!-- чем занимается компания -->
-        <section class="section ">
+        <section class="section">
           <div class="container">
             <h2 class="title-section">Чем мы занимаемся</h2>
             <ul class="list flexbox">
@@ -456,10 +445,13 @@
     <footer class="footer">
       <!-- футер -->
       <div class="container footer-flexbox">
-        <div>
-          <h2 class="logo title-footer"><span class="web">Web</span>Studio</h2>
+        <div class="footer-address">
+          <h2 class="title-footer"><span class="web">Web</span>Studio</h2>
           <address class="text-address" id="contacts">
-            г. Киев, пр-т Леси Украинки, 26 <br />
+            <span class="text-address-white"
+              >г. Киев, пр-т Леси Украинки, 26</span
+            >
+            <br />
             info@example.com <br />
             +38 099 111 11 11
           </address>
@@ -515,7 +507,13 @@
         </div>
       </div>
     </footer>
-
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <svg data-modal-close class="modal-close-button">
+          <use href="./images/icons/symbol-defs.svg#icon-close-1"></use>
+        </svg>
+      </div>
+    </div>
     <script src="./ js/modal.js"></script>
   </body>
 </html>
